@@ -476,11 +476,14 @@ body.home-page{
   background:rgba(255,255,255,.08);
   color:#fff;
 }
-.home-page nav .active{
-  background:none;
-  box-shadow:none;
-  color:#9fd3ff;
-  font-weight:400;
+.home-page nav .active,
+.home-page nav .leaf-link.active,
+.home-page nav a.nav-item.active,
+.home-page nav summary.active{
+  background:rgba(255,255,255,.08);
+  color:#66c0ff;
+  font-weight:700;
+  box-shadow:inset 3px 0 0 #66c0ff;
 }
 .home-page .content{
   background:#fff;
@@ -795,9 +798,14 @@ body.home-page{
 .home-page nav details:not([open]) > summary::before{
   content:"▸";
 }
-.home-page nav .active{
-  color:#52b7ff;
-  font-weight:400;
+.home-page nav .active,
+.home-page nav .leaf-link.active,
+.home-page nav a.nav-item.active,
+.home-page nav summary.active{
+  background:rgba(255,255,255,.08);
+  color:#66c0ff;
+  font-weight:700;
+  box-shadow:inset 3px 0 0 #66c0ff;
 }
 .home-page nav summary:hover,
 .home-page nav a.nav-item:hover,
@@ -892,11 +900,14 @@ body.assistentes-page{
   background:rgba(255,255,255,.04);
   color:#fff;
 }
-.assistentes-page nav .active{
-  background:none;
+.assistentes-page nav .active,
+.assistentes-page nav .leaf-link.active,
+.assistentes-page nav a.nav-item.active,
+.assistentes-page nav summary.active{
+  background:rgba(255,255,255,.08);
   color:#66c0ff;
-  box-shadow:none;
-  font-weight:400;
+  box-shadow:inset 3px 0 0 #66c0ff;
+  font-weight:700;
 }
 .assistentes-page .content{
   background:#fff;
