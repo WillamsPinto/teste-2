@@ -2688,3 +2688,59 @@ body.tool-detail-page{
     gap:10px;
   }
 }
+
+.sobre-container{
+  width:min(100%, 1040px);
+  margin:0 auto;
+  padding:34px 42px;
+}
+
+.sobre-block-header{margin-bottom:16px;}
+.sobre-figure{
+  margin:10px auto 26px;
+  text-align:center;
+}
+
+.sobre-icon-title{
+  margin:0 0 16px;
+  font-size:24px;
+  line-height:1.3;
+  font-weight:700;
+  color:#2c2c2c;
+  text-align:left;
+}
+
+.sobre-figure img{
+  width:min(100%, 430px);
+  margin:0 auto;
+}
+
+.sobre-intro-text{
+  max-width:900px;
+  margin:0 auto 30px;
+}
+
+.sobre-competencias-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+
+.sobre-section-white{background:#fff;}
+.sobre-section-light{background:#f7f7f7;}
+.sobre-section-gray{background:#ececec;}
+.sobre-container{
+  width:min(100%, 1040px);
+  margin:0 auto;
+  padding:34px 42px;
+}
+
+
+.sobre-section p,
+.sobre-team-card p,
+.sobre-competencia-card li,
+.sobre-info-card p{
+  font-size:18px;
+  line-height:1.78;
+  color:#34373b;
+}
