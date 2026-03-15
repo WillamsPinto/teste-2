@@ -2583,8 +2583,38 @@ body.tool-detail-page{
 }
 .tool-detail-page .two-column-panel{
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:20px;
+  grid-template-columns:repeat(2,minmax(280px,360px));
+  gap:5px;
+  justify-content:center;
+}
+.tool-detail-page .tool-panel.two-column-panel{
+  max-width:none;
+  width:100%;
+  margin-left:0;
+  margin-right:0;
+  background:#2c7194;
+  border-color:#2c7194;
+  border-radius:0;
+  box-shadow:none;
+}
+.tool-detail-page .tool-panel.two-column-panel .support-card{
+  min-height:100%;
+}
+.tool-detail-page .tool-panel.two-column-panel .support-card,
+.tool-detail-page .tool-panel.two-column-panel .support-card-accent{
+  box-shadow:none;
+}
+.tool-detail-page .tool-panel.two-column-panel .section-heading,
+.tool-detail-page .tool-panel.two-column-panel .clean-list{
+  max-width:none;
+  margin-left:0;
+  margin-right:0;
+}
+.tool-detail-page .tool-panel.two-column-panel .support-card{
+  width:100%;
+  max-width:360px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .tool-detail-page .support-card{
   border:1px solid #e2e8ed;
