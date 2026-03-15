@@ -1755,6 +1755,7 @@ body.catalogo-home-page{
   }
 }
 
+
 /* Planejamento page aligned with the home page sidebar/menu */
 body.planejamento-page{
   background:#ffffff;
@@ -1854,7 +1855,7 @@ body.planejamento-page{
   position:relative;
   margin:0;
   padding:0;
-  height:300px;
+  min-height:310px;
   overflow:hidden;
   border:none;
   border-radius:0;
@@ -1864,6 +1865,7 @@ body.planejamento-page{
 .planejamento-page .planejamento-hero img{
   width:100%;
   height:100%;
+  min-height:310px;
   object-fit:cover;
 }
 .planejamento-page .planejamento-hero .hero-overlay{
@@ -1872,16 +1874,16 @@ body.planejamento-page{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:20px 24px;
-  background:rgba(0,0,0,.24);
+  padding:24px;
+  background:rgba(0,0,0,.28);
   text-align:center;
 }
 .planejamento-page .planejamento-hero h1{
   margin:0;
-  max-width:760px;
+  max-width:860px;
   color:#ffffff;
-  font-size:28px;
-  line-height:1.2;
+  font-size:64px;
+  line-height:1.08;
   font-weight:700;
 }
 .planejamento-page .planejamento-intro,
@@ -1974,18 +1976,19 @@ body.planejamento-page{
   }
   .planejamento-page.menu-open .sidebar{transform:translateX(0)}
   .planejamento-page.menu-open .sidebar-backdrop{display:block}
-  .planejamento-page .planejamento-hero{height:240px}
-  .planejamento-page .planejamento-hero h1{font-size:24px}
+  .planejamento-page .planejamento-hero,
+  .planejamento-page .planejamento-hero img{min-height:230px}
+  .planejamento-page .planejamento-hero h1{font-size:42px}
   .planejamento-page .planejamento-intro{padding:24px 22px}
   .planejamento-page .planejamento-tools{padding:28px 22px 36px}
   .planejamento-page .tool-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 }
 @media (max-width:640px){
-  .planejamento-page .planejamento-hero{height:220px}
-  .planejamento-page .planejamento-hero h1{font-size:20px;line-height:1.2}
+  .planejamento-page .planejamento-hero h1{font-size:31px;line-height:1.14}
   .planejamento-page .planejamento-intro p{font-size:15px}
   .planejamento-page .planejamento-banner p{font-size:16px}
   .planejamento-page .tool-grid{grid-template-columns:1fr}
   .planejamento-page .tool-card{min-height:auto;padding:22px 18px}
   .planejamento-page .tool-card h3{font-size:24px}
 }
+
