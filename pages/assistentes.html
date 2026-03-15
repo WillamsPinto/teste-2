@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assistentes - PotencIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body class="assistentes-page">
@@ -18,7 +21,6 @@
 
   <div class="layout">
     <aside class="sidebar" id="site-sidebar">
-
       <a href="../index.html" class="brand">
         <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
         <span>PotencIA</span>
@@ -28,7 +30,7 @@
         <a class="nav-item" href="../index.html">Página inicial</a>
 
         <details open>
-          <summary data-href="../pages/assistentes.html">Assistentes</summary>
+          <summary class="active" data-href="../pages/assistentes.html">Assistentes</summary>
           <div class="group">
             <a class="nav-item" href="../pages/catalogo.html">Catálogo de Ferramentas</a>
 
@@ -94,41 +96,77 @@
 
     <main class="content">
       <div class="page">
-        <section class="assistentes-hero tight" aria-label="Cabeçalho da página Assistentes">
-            <img src="../assets/assistentes-hero-reference.png" alt="Assistentes" />
-          </section>
+        <section class="assistentes-hero" aria-label="Cabeçalho da página Assistentes">
+          <img src="../assets/assistentes-hero-reference.png" alt="Assistentes" />
+        </section>
 
-        <section class="text-block tight">
-          <h3>Introdução</h3>
-          <p>O Toolkit PotencIA reúne ferramentas de Inteligência Artificial que podem atuar como assistentes no trabalho docente. Esses recursos podem apoiar diferentes momentos do processo pedagógico, desde o planejamento das aulas até a mediação das atividades e a avaliação da aprendizagem.</p>
-          <p>Ao organizar as ferramentas de acordo com essas etapas, o toolkit busca facilitar a identificação de quais tecnologias podem contribuir para cada fase da prática educativa, auxiliando professores a integrar a IA de forma intencional, crítica e alinhada aos objetivos de aprendizagem.</p>
-          <h3>Como funciona cada assistente do PotêncIA?</h3>
+        <section class="assistentes-intro content-section">
+          <h2>Introdução</h2>
+          <p>O Toolkit PotencIA reúne ferramentas de Inteligência Artificial que podem atuar como assistentes no trabalho docente. Esses recursos podem apoiar diferentes momentos do processo pedagógico, desde o planejamento das aulas até a mediação das atividades e a avaliação da aprendizagem. Ao organizar as ferramentas de acordo com essas etapas, o toolkit busca facilitar a identificação de quais tecnologias podem contribuir para cada fase da prática educativa, auxiliando professores a integrar a IA de forma intencional, crítica e alinhada aos objetivos de aprendizagem.</p>
+        </section>
+
+        <section class="assistentes-intro content-section content-section-gap">
+          <h2 class="icon-title">🧰 Como funciona cada assistente do PotêncIA?</h2>
           <p>O funcionamento do PotencIA Toolkit baseia-se na organização das ferramentas de Inteligência Artificial conforme seu potencial de apoio em diferentes tarefas da prática docente. Para facilitar a navegação e a escolha dos recursos, as ferramentas foram agrupadas em três categorias principais, que representam momentos recorrentes do trabalho pedagógico.</p>
+
+          <div class="diagram-wrap">
+            <img src="../assets/assistentes-diagrama.png" alt="Diagrama das categorias do PotencIA Toolkit" />
+          </div>
+
           <p>Ao clicar em um dos assistentes disponíveis no toolkit, você encontrará uma página organizada de forma padronizada para facilitar seu uso. Cada ferramenta contém:</p>
-          <p>✅ O que é e para que serve<br />Acesso direto à plataforma<br />Exemplo de aplicação pedagógica<br />Dicas de uso ou orientações éticas</p>
+          <ul class="assistant-checklist">
+            <li>✅ O que é e para que serve</li>
+            <li>🌐 Acesso direto à plataforma</li>
+            <li>🎓 Exemplo de aplicação pedagógica</li>
+            <li>💡 Dicas de uso ou orientações éticas</li>
+          </ul>
           <p>Esse padrão foi pensado para que você, educador, tenha uma experiência clara, objetiva e prática com cada recurso disponível no PotêncIA.</p>
-          <p>Clique em cada categoria para explorar!</p>
         </section>
 
-        <section class="tool-list">
-          <div class="tool-section">
-            <h3><a href="planejamento.html">Assistentes de IA para Planejamento Pedagógico</a></h3>
+        <section class="full-banner">Clique em cada categoria para explorar!</section>
+
+        <section class="categories content-section">
+          <article class="category-block">
+            <h3 class="category-title dot-green">Assistentes de IA para Planejamento Pedagógico</h3>
             <p>Esta categoria apresenta ferramentas de Inteligência Artificial que podem atuar como assistentes pedagógicos, apoiando o professor no planejamento da aula, na mediação das atividades de aprendizagem e na avaliação das produções dos estudantes.</p>
-          </div>
-          <div class="tool-section">
-            <h3><a href="mediacao.html">Assistentes de IA para Mediação Pedagógica</a></h3>
+            <p class="category-link">🔗 <a href="planejamento.html">Explorar Assistentes de IA para Planejamento Pedagógico</a></p>
+          </article>
+
+          <article class="category-block">
+            <h3 class="category-title dot-blue">Assistentes de IA para Mediação Pedagógica</h3>
             <p>Esta categoria reúne ferramentas de Inteligência Artificial que podem apoiar a mediação pedagógica durante a aula. Esses recursos auxiliam o professor na criação de materiais visuais, audiovisuais e interativos que podem tornar as explicações mais claras, dinâmicas e envolventes, contribuindo para enriquecer a experiência de aprendizagem dos estudantes.</p>
-          </div>
-          <div class="tool-section">
-            <h3><a href="avaliacao.html">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</a></h3>
+            <p class="category-link">🔗 <a href="mediacao.html">Explorar Assistentes de IA para Mediação Pedagógica</a></p>
+          </article>
+
+          <article class="category-block">
+            <h3 class="category-title dot-purple">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</h3>
             <p>Esta categoria reúne ferramentas de Inteligência Artificial que podem apoiar o professor nos processos de avaliação e reflexão sobre a aprendizagem. Esses recursos auxiliam na análise de textos, revisão de produções e organização de informações, contribuindo para oferecer feedback mais claro aos estudantes e apoiar o aprimoramento da prática pedagógica.</p>
+            <p class="category-link">🔗 <a href="avaliacao.html">Explorar Assistentes de IA para Mediação Pedagógica</a></p>
+          </article>
+        </section>
+
+        <section class="full-banner">Acesse o Catalogo Completo!</section>
+
+        <section class="catalog content-section">
+          <div class="catalog-card">
+            <a href="catalogo.html" class="catalog-link-card" aria-label="Abrir Catálogo de Ferramentas">
+              <img src="../assets/catalogo-card.png" alt="Catálogo de Ferramentas" />
+              <span>Catálogo de Ferramentas</span>
+            </a>
           </div>
         </section>
 
-        <footer class="footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
+        <section class="about-block content-section about-gap">
+          <h2 class="icon-title">✨ Saiba Mais !</h2>
+          <p>Este guia faz parte do projeto PotêncIA, desenvolvido no PPGIA/UFRPE. Para conhecer a proposta pedagógica e as competências desenvolvidas com o uso dessas ferramentas, visite a seção:</p>
+          <p class="category-link">🔗 <a href="sobre.html">Sobre</a></p>
+        </section>
       </div>
     </main>
   </div>
+
+  <a class="floating-search" href="#" aria-label="Pesquisar">⌕</a>
+  <a class="floating-edit" href="#" aria-label="Editar">✎</a>
 
   <script src="../assets/js/main.js"></script>
 </body>
