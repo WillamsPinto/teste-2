@@ -1585,11 +1585,15 @@ body.catalogo-home-page{
 }
 .catalogo-home-page .catalogo-summary-card h3{
   margin:0 0 10px;
-  text-align:left;
+  text-align:center;
   font-size:19px;
   line-height:1.35;
   font-weight:700;
   color:#1f6f97;
+}
+.catalogo-home-page .catalogo-summary-card h3 a{
+  display:block;
+  text-align:center;
 }
 .catalogo-home-page .catalogo-summary-card p{
   margin:0;
@@ -1621,7 +1625,15 @@ body.catalogo-home-page{
   padding:34px 30px 40px;
 }
 .catalogo-home-page .catalogo-category-home:not(.catalogo-category-alt){
-  background:#156d95;
+  background:#27c93f;
+  color:#fff;
+}
+.catalogo-home-page #mediacao.catalogo-category-home{
+  background:#2f98ea;
+  color:#fff;
+}
+.catalogo-home-page #avaliacao.catalogo-category-home{
+  background:#8b6de5;
   color:#fff;
 }
 .catalogo-home-page .catalogo-category-alt{
@@ -1655,12 +1667,20 @@ body.catalogo-home-page{
 }
 .catalogo-home-page .catalogo-category-home .cta{
   background:#fff;
-  color:#156d95;
+  color:#1f8f2d;
   box-shadow:none;
 }
 .catalogo-home-page .catalogo-category-alt .cta{
-  background:#156d95;
+  background:#27c93f;
   color:#fff;
+}
+.catalogo-home-page #mediacao.catalogo-category-home .cta{
+  background:#fff;
+  color:#1f78be;
+}
+.catalogo-home-page #avaliacao.catalogo-category-home .cta{
+  background:#fff;
+  color:#6d52be;
 }
 .catalogo-home-page .catalogo-tool-grid{
   display:grid;
@@ -1670,6 +1690,8 @@ body.catalogo-home-page{
 .catalogo-home-page .catalogo-tool-card{
   display:flex;
   flex-direction:column;
+  align-items:center;
+  text-align:center;
   gap:12px;
   min-height:100%;
   border-radius:20px;
@@ -1680,14 +1702,21 @@ body.catalogo-home-page{
 }
 .catalogo-home-page .catalogo-tool-card h3{
   margin:0;
-  text-align:left;
+  width:100%;
+  text-align:center;
   font-size:19px;
   line-height:1.35;
   font-weight:700;
   color:#1f6f97;
 }
+.catalogo-home-page .catalogo-tool-card h3 a{
+  display:block;
+  text-align:center;
+}
 .catalogo-home-page .catalogo-tool-card p{
   margin:0;
+  width:100%;
+  text-align:center;
   font-size:14px;
   line-height:1.65;
   color:#4a4a4a;
