@@ -89,7 +89,9 @@
       const wrapperClass = level === 0 ? 'group' : 'subgroup';
       return `
         <details${isOpen ? ' open' : ''} data-nav-id="${node.id}">
-          <summary data-href="${href}" class="${isActive ? 'active' : ''}">${node.label}</summary>
+          <summary class="${isActive ? 'active' : ''}">
+            <a href="${href}" class="summary-link" data-nav-id="${node.id}">${node.label}</a>
+          </summary>
           <div class="${wrapperClass}">
             ${renderNodes(node.children, currentId, basePath, level + 1)}
           </div>
