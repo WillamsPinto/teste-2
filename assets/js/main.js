@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   const toggleButton = document.querySelector('.menu-toggle');
@@ -31,19 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.querySelectorAll('.sidebar summary[data-href]').forEach(summary => {
-    summary.addEventListener('click', (event) => {
-      const details = summary.parentElement;
-      const targetHref = summary.getAttribute('data-href');
-      if (!targetHref) return;
-
+  document.querySelectorAll('.sidebar summary .summary-link').forEach(link => {
+    link.addEventListener('click', (event) => {
       event.preventDefault();
-
-      if (details && details.tagName === 'DETAILS') {
-        details.open = true;
-      }
-
-      window.location.href = targetHref;
+      event.stopPropagation();
+      window.location.href = link.href;
     });
   });
 
