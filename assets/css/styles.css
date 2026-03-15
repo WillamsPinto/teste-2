@@ -25,7 +25,7 @@
 html,body{
   margin:0;
   padding:0;
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:'Roboto',Arial,sans-serif;
   color:var(--gs-text);
   background:linear-gradient(180deg,#f8fbff 0%,#ffffff 24%,#ffffff 100%);
   overflow-x:hidden;
@@ -101,6 +101,18 @@ button,input{font:inherit}
   overflow-y:auto;
   z-index:1001;
 }
+.search-icon{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#5f6368;
+  margin:0 0 10px auto;
+  font-size:18px;
+}
+
 .sidebar-backdrop{
   display:none;
   position:fixed;
@@ -820,7 +832,7 @@ body.home-page{
 /* Assistentes page tuned to match reference screenshot */
 body.assistentes-page{
   background:#ececec;
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:'Roboto',Arial,sans-serif;
 }
 .assistentes-page .layout{
   grid-template-columns:224px minmax(0,1fr);
@@ -1181,3 +1193,8 @@ body.assistentes-page,
   .assistentes-page .full-banner{font-size:16px;padding:22px 16px !important}
   .assistentes-page .catalog-link-card span{font-size:20px}
 }
+
+nav .group > .nav-item{margin-bottom:2px;}
+nav .leaf-link{display:block;width:100%;border-radius:20px;padding:6px 12px;color:#3c4043;font-size:13px;line-height:1.35;transition:background-color .18s ease,color .18s ease,box-shadow .18s ease,transform .18s ease;}
+nav .leaf-link:hover{background:linear-gradient(90deg,#f3f7ff 0%,#eef4ff 100%);color:var(--pt-primary-strong);}
+nav .leaf-link.active, nav summary.active{background:linear-gradient(90deg,#e8f0fe 0%,#edf3ff 100%);color:var(--gs-active-text);font-weight:700;box-shadow:inset 3px 0 0 var(--pt-primary);}

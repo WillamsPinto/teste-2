@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inteligência Artificial como Aliada da Educação 4.0 - PotencIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 <body>
@@ -17,83 +20,7 @@
   <div class="sidebar-backdrop"></div>
 
   <div class="layout">
-    <aside class="sidebar" id="site-sidebar">
-      <div class="search-box">
-        <input type="text" placeholder="Search this site" aria-label="Search this site" />
-      </div>
-
-      <a href="../index.html" class="brand">
-        <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
-        <span>PotencIA</span>
-      </a>
-
-      <nav aria-label="Navegação do site">
-        <a class="nav-item" href="../index.html">Página inicial</a>
-
-        <details open>
-          <summary data-href="../pages/assistentes.html">Assistentes</summary>
-          <div class="group">
-            <a class="nav-item" href="../pages/catalogo.html">Catálogo de Ferramentas</a>
-
-            <details open>
-              <summary data-href="../pages/planejamento.html">Assistentes de IA para Planejamento Pedagógico</summary>
-              <div class="subgroup">
-                <a class="leaf-link" href="../pages/chatgpt.html">ChatGPT</a>
-                <a class="leaf-link" href="../pages/gemini.html">Gemini</a>
-                <a class="leaf-link" href="../pages/ideamap-ai.html">Ideamap AI</a>
-                <a class="leaf-link" href="../pages/phind.html">Phind</a>
-                <a class="leaf-link" href="../pages/magicschool-ai.html">MagicSchool AI</a>
-                <a class="leaf-link" href="../pages/slidesai.html">SlidesAI</a>
-                <a class="leaf-link" href="../pages/gamma-app.html">Gamma.app</a>
-              </div>
-            </details>
-
-            <details open>
-              <summary data-href="../pages/mediacao.html">Assistentes de IA para Mediação Pedagógica</summary>
-              <div class="subgroup">
-                <a class="leaf-link" href="../pages/canva.html">Canva</a>
-                <a class="leaf-link" href="../pages/adobe-firefly.html">Adobe Firefly</a>
-                <a class="leaf-link" href="../pages/leonardo-ai.html">Leonador AI</a>
-                <a class="leaf-link" href="../pages/bing-image-creator.html">Bing Image Creator</a>
-                <a class="leaf-link" href="../pages/imagefx.html">ImageFX</a>
-                <a class="leaf-link" href="../pages/autodraw.html">AutoDraw</a>
-                <a class="leaf-link" href="../pages/invideo-ai.html">Invideo AI</a>
-                <a class="leaf-link" href="../pages/vidnoz-ai.html">Vidnoz AI</a>
-                <a class="leaf-link" href="../pages/ai-song-generator.html">AI Song Generator</a>
-                <a class="leaf-link" href="../pages/suno-ai.html">Suno AI</a>
-                <a class="leaf-link" href="../pages/animated-drawings.html">Animated Drawings</a>
-                <a class="leaf-link" href="../pages/murf-ai.html">Murf.ai</a>
-                <a class="leaf-link" href="../pages/khanmigo-beta.html">Khanmigo (beta)</a>
-              </div>
-            </details>
-
-            <details open>
-              <summary data-href="../pages/avaliacao.html">Assistentes de IA para Avaliação e Reflexão da Aprendizagem</summary>
-              <div class="subgroup">
-                <a class="leaf-link" href="../pages/quillbot.html">QuillBot</a>
-                <a class="leaf-link" href="../pages/max-ai.html">Max AI</a>
-                <a class="leaf-link" href="../pages/liner-ai.html">Liner AI</a>
-                <a class="leaf-link" href="../pages/chatpdf.html">ChatPDF</a>
-                <a class="leaf-link" href="../pages/languagetool.html">LanguageTool</a>
-              </div>
-            </details>
-          </div>
-        </details>
-
-        <details open>
-          <summary data-href="../pages/orientacao-para-o-uso-da-ia.html">Orientação para o uso da IA</summary>
-          <div class="group">
-            <a class="nav-item" href="../pages/orientacao-para-o-uso-da-ia.html">Orientação para o uso da IA</a>
-            <a class="leaf-link active" href="../pages/ia-como-aliada-da-educacao-4-0.html">IA como Aliada da Educação 4.0</a>
-            <a class="leaf-link" href="../pages/etica-no-uso-da-inteligencia-artificial.html">Ética no Uso da Inteligência Artificial</a>
-            <a class="leaf-link" href="../pages/engenharia-de-prompt.html">Engenharia de Prompt</a>
-            <a class="leaf-link" href="../pages/exemplos-praticos.html">Exemplos Práticos</a>
-          </div>
-        </details>
-
-        <a class="nav-item" href="../pages/sobre.html">Sobre</a>
-      </nav>
-    </aside>
+    <aside class="sidebar" id="site-sidebar" data-sidebar-source="shared" data-base-path=".." data-current-page="orientacao"></aside>
 
     <main class="content">
       <div class="page">
@@ -107,7 +34,7 @@
       </div>
     </main>
   </div>
-
+  <script src="../assets/js/sidebar.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>
