@@ -98,7 +98,6 @@ button,input{font:inherit}
   position:sticky;
   top:0;
   height:100vh;
-  min-height:100vh;
   overflow-y:auto;
   z-index:1001;
 }
@@ -814,12 +813,11 @@ body.home-page{
   align-items:stretch;
 }
 .home-page .sidebar{
-  position:sticky;
-  top:0;
-  height:100vh;
-  min-height:100vh;
+  position:relative;
+  top:auto;
+  height:auto;
+  min-height:100%;
   align-self:stretch;
-  overflow-y:auto;
 }
 @media (max-width:1080px){
   .home-page .sidebar{
@@ -845,12 +843,11 @@ body.assistentes-page{
   background:linear-gradient(180deg,#1f2024 0%,#191a1d 100%);
   border-right:none;
   padding:18px 0 26px;
-  position:sticky;
-  top:0;
-  height:100vh;
-  min-height:100vh;
+  position:relative;
+  top:auto;
+  height:auto;
+  min-height:100%;
   align-self:stretch;
-  overflow-y:auto;
 }
 .assistentes-page .brand{
   display:flex;
@@ -1238,3 +1235,20 @@ nav .group > .nav-item{margin-bottom:2px;}
 nav .leaf-link{display:block;width:100%;border-radius:20px;padding:6px 12px;color:#3c4043;font-size:13px;line-height:1.35;transition:background-color .18s ease,color .18s ease,box-shadow .18s ease,transform .18s ease;}
 nav .leaf-link:hover{background:linear-gradient(90deg,#f3f7ff 0%,#eef4ff 100%);color:var(--pt-primary-strong);}
 nav .leaf-link.active, nav summary.active{background:linear-gradient(90deg,#e8f0fe 0%,#edf3ff 100%);color:var(--gs-active-text);font-weight:700;box-shadow:inset 3px 0 0 var(--pt-primary);}
+
+
+/* Sidebar stretch fix for long pages (index and assistentes) */
+.home-page .layout,
+.assistentes-page .layout{
+  align-items:stretch;
+}
+
+.home-page .sidebar,
+.assistentes-page .sidebar{
+  position:relative;
+  top:auto;
+  height:auto;
+  min-height:100%;
+  align-self:stretch;
+}
+
