@@ -9,10 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
+<body class="assistentes-page">
   <header class="mobile-header">
     <div class="mobile-brand">
-      <img src="https://lh3.googleusercontent.com/sitesv/APaQ0ST6aLFeeJcdef0jPVVjqgtVv_Qvd1xODidUpoayRt0F2LXE0bHwBCndETIV_5PGBvcekTbLDpBqwdGV_LvS5c-AAmRiUmO1s2ePTsOD3k5cXtjbVmVr19_prIxhkRGVIfGIFfjNTQMpCPslSl5qFNAcxCkc5oJEpJ0iEOtHTba4rpQ6BC6Lbw=w512" alt="Logo PotencIA" />
+      <img src="../assets/logo_icon.png" alt="Logo PotencIA" />
       <span>PotencIA</span>
     </div>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-sidebar">☰</button>
@@ -24,16 +24,104 @@
 
     <main class="content">
       <div class="page">
-        <section class="hero tight"><h1>Engenharia de Prompt</h1></section>
-        <section class="text-block tight"><h2>O que é Engenharia de Prompt?</h2><p>Engenharia de prompt é a prática de desenvolver instruções (prompts) bem estruturadas e específicas para obter respostas eficazes e alinhadas ao objetivo desejado de um modelo de Inteligência Artificial Generativa, como ChatGPT ou Gemini. Ela é fundamental para transformar a IA em uma aliada poderosa no contexto educacional.</p><p>Quanto melhor o prompt, melhor a resposta da IA.</p></section>
-        <section class="text-block tight"><h2>Elementos Essenciais de um Prompt Eficiente</h2><ul><li>Instrução clara: O que você deseja que a IA faça?</li><li>Contexto: Informações adicionais como disciplina, ano escolar, perfil da turma.</li><li>Exemplos: Modelos de entrada e saída ajudam a guiar a IA.</li><li>Formato esperado: Texto, lista, tabela, plano de aula, etc.</li><li>Tom e estilo: Formal, infantil, acadêmico, lúdico, entre outros.</li></ul></section>
-        <section class="text-block tight"><h2>Princípios para Design de Bons Prompts</h2><ul><li>Comece simples: Um prompt direto costuma funcionar melhor do que algo excessivamente complexo.</li><li>Itere e refine: Teste variações até encontrar o formato que “desperta” a melhor resposta da IA.</li><li>Teste limites: Explore diferentes formas de formular a mesma tarefa — isso ajuda a entender como a IA responde a nuances.</li><li>Seja específico e contextualizado: Quanto mais informações relevantes você fornecer, melhor será o resultado.</li><li>Utilize “personas”: Oriente a IA a assumir papéis — por exemplo: “Você é professor de Geografia”, ou “Você é tutor para educação infantil”.</li></ul><p><strong>Nota ética adicional:</strong></p><ul><li>Considere a privacidade e o respeito aos dados: não insira informações sensíveis de alunos ou dados pessoais.</li></ul></section>
-        <section class="text-block tight"><h2>Ética e Engenharia de Prompt</h2><p>A adoção de IA em contextos educacionais traz grandes oportunidades — personalização, aceleração de tarefas, auxílio criativo —, mas também exige atenção aos desafios éticos: transparência, equidade, privacidade, viés, integridade acadêmica.</p><p>Alguns dos principais aspectos:</p><ul><li>Transparência e explicabilidade: Saber quando e como a IA foi usada, e como ela chegou àquela resposta.</li><li>Justiça, viés e inclusão: Modelos de IA podem reproduzir vieses dos dados com que foram treinados. É necessário refletir sobre quem está representado e quem está invisibilizado.</li><li>Privacidade e proteção de dados: Em especial no uso escolar, cuidado em não revelar informações pessoais ou sensíveis de alunos.</li><li>Integridade acadêmica: A IA não deve substituir o pensamento crítico, nem mascarar autoria ou aprendizagem — mas ser aliada no processo.</li><li>Sustentabilidade e impacto social: A tecnologia de IA tem impactos ambientais, e o acesso desigual pode ampliar o fosso digital.</li></ul></section>
-        <section class="text-block tight"><h2>Exemplos Práticos na Educação</h2><h3>Prompt Fraco:</h3><p>"Explique a fotossíntese."</p><h3>Prompt Melhorado:</h3><p>"Explique o processo de fotossíntese de forma lúdica, com analogias simples, para alunos do 6º ano do ensino fundamental, incluindo um exemplo prático com planta doméstica."</p><h3>Prompt Avançado com Estrutura:</h3><p>"Você é um professor de Ciências da Natureza. Crie um plano de aula para o 6º ano sobre fotossíntese contendo:</p><p>1. Objetivo da aula</p><p>2. Atividade prática com material acessível</p><p>3. Três perguntas avaliativas</p><p>4. Indicação de habilidade da BNCC</p><p>5. Sugestão de imagem ou analogia visual."</p></section>
-        <footer class="footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
+        <section class="assistentes-hero" aria-labelledby="engenharia-prompt-title">
+          <img src="../assets/assistente/background.jpg" alt="Engenharia de Prompt" />
+          <div class="hero-overlay">
+            <h1 id="engenharia-prompt-title">Engenharia de Prompt</h1>
+          </div>
+        </section>
+
+        <section class="assistentes-intro content-section">
+          <h2>O que é Engenharia de Prompt?</h2>
+          <p>Engenharia de prompt é a prática de desenvolver instruções (prompts) bem estruturadas e específicas para obter respostas eficazes e alinhadas ao objetivo desejado de um modelo de Inteligência Artificial Generativa, como ChatGPT ou Gemini. Ela é fundamental para transformar a IA em uma aliada poderosa no contexto educacional.</p>
+          <p>Quanto melhor o prompt, melhor a resposta da IA.</p>
+        </section>
+
+        <section class="content-section content-section-gap">
+          <h2>Elementos Essenciais de um Prompt Eficiente</h2>
+          <ul>
+            <li>Instrução clara: O que você deseja que a IA faça?</li>
+            <li>Contexto: Informações adicionais como disciplina, ano escolar, perfil da turma.</li>
+            <li>Exemplos: Modelos de entrada e saída ajudam a guiar a IA.</li>
+            <li>Formato esperado: Texto, lista, tabela, plano de aula, etc.</li>
+            <li>Tom e estilo: Formal, infantil, acadêmico, lúdico, entre outros.</li>
+          </ul>
+        </section>
+
+        <section class="full-banner">Princípios para escrever prompts melhores</section>
+
+        <section class="categories content-section">
+          <article class="category-block">
+            <h3 class="category-title dot-green">Princípios para Design de Bons Prompts</h3>
+            <ul>
+              <li>Comece simples: Um prompt direto costuma funcionar melhor do que algo excessivamente complexo.</li>
+              <li>Itere e refine: Teste variações até encontrar o formato que “desperta” a melhor resposta da IA.</li>
+              <li>Teste limites: Explore diferentes formas de formular a mesma tarefa — isso ajuda a entender como a IA responde a nuances.</li>
+              <li>Seja específico e contextualizado: Quanto mais informações relevantes você fornecer, melhor será o resultado.</li>
+              <li>Utilize “personas”: Oriente a IA a assumir papéis — por exemplo: “Você é professor de Geografia”, ou “Você é tutor para educação infantil”.</li>
+            </ul>
+          </article>
+
+          <article class="category-block">
+            <h3 class="category-title dot-blue">Nota ética adicional</h3>
+            <ul>
+              <li>Considere a privacidade e o respeito aos dados: não insira informações sensíveis de alunos ou dados pessoais.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="full-banner">Ética e Engenharia de Prompt</section>
+
+        <section class="categories content-section">
+          <article class="category-block">
+            <h3 class="category-title dot-purple">Aspectos éticos principais</h3>
+            <p>A adoção de IA em contextos educacionais traz grandes oportunidades — personalização, aceleração de tarefas, auxílio criativo —, mas também exige atenção aos desafios éticos: transparência, equidade, privacidade, viés, integridade acadêmica.</p>
+            <p>Alguns dos principais aspectos:</p>
+            <ul>
+              <li>Transparência e explicabilidade: Saber quando e como a IA foi usada, e como ela chegou àquela resposta.</li>
+              <li>Justiça, viés e inclusão: Modelos de IA podem reproduzir vieses dos dados com que foram treinados. É necessário refletir sobre quem está representado e quem está invisibilizado.</li>
+              <li>Privacidade e proteção de dados: Em especial no uso escolar, cuidado em não revelar informações pessoais ou sensíveis de alunos.</li>
+              <li>Integridade acadêmica: A IA não deve substituir o pensamento crítico, nem mascarar autoria ou aprendizagem — mas ser aliada no processo.</li>
+              <li>Sustentabilidade e impacto social: A tecnologia de IA tem impactos ambientais, e o acesso desigual pode ampliar o fosso digital.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="content-section content-section-gap">
+          <h2>Exemplos Práticos na Educação</h2>
+          <h3>Prompt Fraco:</h3>
+          <p>"Explique a fotossíntese."</p>
+          <h3>Prompt Melhorado:</h3>
+          <p>"Explique o processo de fotossíntese de forma lúdica, com analogias simples, para alunos do 6º ano do ensino fundamental, incluindo um exemplo prático com planta doméstica."</p>
+          <h3>Prompt Avançado com Estrutura:</h3>
+          <p>"Você é um professor de Ciências da Natureza. Crie um plano de aula para o 6º ano sobre fotossíntese contendo:</p>
+          <p>1. Objetivo da aula</p>
+          <p>2. Atividade prática com material acessível</p>
+          <p>3. Três perguntas avaliativas</p>
+          <p>4. Indicação de habilidade da BNCC</p>
+        </section>
+
+        <section class="content-section content-section-gap">
+          <h2>Prompts para Elaboração de Conteúdo</h2>
+          <ul>
+            <li>Alfabetização Midiática: "Explique alfabetização midiática para ensino médio. Indique fontes, apresente diferentes pontos de vista, explique limitações e incentive reflexão crítica."</li>
+            <li>Mudança Climática: "Crie infográfico sobre mudança climática para 8º ano. Inclua dados atualizados, cite referências, destaque vieses e proponha debate."</li>
+            <li>Avaliação Crítica: "Analise este texto e aponte possíveis vieses ou lacunas. Sugira duas perguntas provocativas para os alunos discutirem."</li>
+            <li>Planejamento Pedagógico: "Sugira sequência de três aulas que promova autonomia crítica, inclua momentos de uso da IA como apoio e descreva como verificar respostas."</li>
+          </ul>
+        </section>
+
+        <section class="about-block content-section about-gap">
+          <h2>Quer se aprofundar?</h2>
+          <p>Se você deseja explorar mais sobre técnicas avançadas de engenharia de prompt, acesse o <a href="https://www.promptingguide.ai" target="_blank" rel="noopener noreferrer">Prompting Guide</a>. Lá você encontrará exemplos, boas práticas e fundamentos detalhados para criar prompts ainda mais eficientes.</p>
+          <p class="category-link">🔗 <a href="exemplos-praticos.html">Veja também a página sobre Exemplos Práticos</a></p>
+        </section>
+
+        <footer class="home-footer">willams.pinto@ufrpe.br &nbsp; | &nbsp; UFRPE | &nbsp; 2025</footer>
       </div>
     </main>
   </div>
+
   <script src="../assets/js/sidebar.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
