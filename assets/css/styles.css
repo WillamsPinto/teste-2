@@ -1868,6 +1868,15 @@ body.catalogo-home-page{
   background:#fff;
   color:#6d52be;
 }
+.catalogo-home-page #planejamento.catalogo-tool-card h3{
+  color:#27c93f;
+}
+.catalogo-home-page #mediacao.catalogo-tool-card h3{
+  color:#2f98ea;
+}
+.catalogo-home-page #avaliacao.catalogo-tool-card h3{
+  color:#8b6de5;
+}
 
 /* Sobre page aligned with home layout */
 .sobre-page .content{
